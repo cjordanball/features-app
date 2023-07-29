@@ -3,6 +3,14 @@
 		"experiments": {
 			"tsconfigPaths": true
 		},
+		"plugins": [
+			[
+				"expo-image-picker",
+				{
+					"cameraPermission": "Allw access to the camera, please."
+				}
+			]
+		],
 		"name": "features-app",
 		"slug": "features-app",
 		"version": "1.0.0",
