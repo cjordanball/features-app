@@ -6,7 +6,7 @@ import { Colors } from '@/constants/colors';
 
 const { Screen, Navigator } = createNativeStackNavigator();
 
-import { AllPlaces, AddPlace } from '@/screens';
+import { AllPlaces, AddPlace, Map } from '@/screens';
 
 const App = () => {
 	return (
@@ -42,6 +42,7 @@ const App = () => {
 							title: 'Add a New Place',
 						}}
 					/>
+					<Screen name='Map' component={Map} />
 				</Navigator>
 			</NavigationContainer>
 		</>
