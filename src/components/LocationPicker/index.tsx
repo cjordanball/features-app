@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { StyleSheet, View, Text, Alert, Image } from 'react-native';
 import { getMapPreview } from '@/utilities/location';
 import OutlinedButton from '../UI/OutlinedButton';
@@ -8,13 +8,31 @@ import {
 	useForegroundPermissions,
 	PermissionStatus,
 } from 'expo-location';
-import { useNavigation } from '@react-navigation/native';
+import {
+	useNavigation,
+	useRoute,
+	useIsFocused,
+} from '@react-navigation/native';
 import { Map } from '@/screens';
+import { AddPlaceRouteProps } from '@/types';
 
 const LocationPicker = () => {
+	const isFocused = useIsFocused();
 	const nav = useNavigation();
+	const route = useRoute();
 	const [location, setLocation] = useState(null);
 	const [locStatus, requestLocPermission] = useForegroundPermissions();
+
+	useEffect(() => {
+		console.log('isFocused', isFocused);
+		if (isFocused && route.params) {
+			const mapPickedLocation = {
+				lat: route.params.pickedLat,
+				lng: route.params.pickedLng,
+			};
+			setLocation(mapPickedLocation);
+		}
+	}, [route, isFocused]);
 
 	const verifyPermissions = async () => {
 		if (locStatus.status === PermissionStatus.UNDETERMINED) {
