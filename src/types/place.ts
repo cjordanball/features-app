@@ -4,7 +4,7 @@ type Place = {
 	title: String;
 	imageURL: ImageSourcePropType;
 	address: String;
-	location: Location;
+	location: { lat: number; lng: number };
 	id: String;
 };
 
