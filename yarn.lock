@@ -2001,6 +2001,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@expo/websql@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@expo/websql@npm:1.0.1"
+  dependencies:
+    argsarray: ^0.0.1
+    immediate: ^3.2.2
+    noop-fn: ^1.0.0
+    pouchdb-collections: ^1.0.1
+    tiny-queue: ^0.2.1
+  checksum: 9458137b3c59774ca8bf18e2289ee2fd15c710a8017c84be49f78d9b988d6234b02388de2786b44ed22e906e006c3c131413e90e3b703b00886269ddea76cc5d
+  languageName: node
+  linkType: hard
+
 "@expo/xcpretty@npm:^4.2.1":
   version: 4.2.2
   resolution: "@expo/xcpretty@npm:4.2.2"
@@ -3014,6 +3027,13 @@ __metadata:
   version: 2.0.1
   resolution: "argparse@npm:2.0.1"
   checksum: 83644b56493e89a254bae05702abf3a1101b4fa4d0ca31df1c9985275a5a5bd47b3c27b7fa0b71098d41114d8ca000e6ed90cad764b306f8a503665e4d517ced
+  languageName: node
+  linkType: hard
+
+"argsarray@npm:^0.0.1":
+  version: 0.0.1
+  resolution: "argsarray@npm:0.0.1"
+  checksum: 0042accbc0a2d855ad5af56df49291e0e4cae7456f42d486f4cb05518c8e1939bf8aca7dece89d846349d615793fae2cea8ebb20a8207c0f22dafb88b1536819
   languageName: node
   linkType: hard
 
@@ -4471,6 +4491,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"expo-splash-screen@npm:~0.20.5":
+  version: 0.20.5
+  resolution: "expo-splash-screen@npm:0.20.5"
+  dependencies:
+    "@expo/prebuild-config": 6.2.6
+  peerDependencies:
+    expo: "*"
+  checksum: c4b0db3d0e8ab755a9f4afb1f20824229fa84ea2410528e4316a62e676e08f990157c9edd4af0978f79183d6b47cf3d4843b86f76c084274a40e07adfd697889
+  languageName: node
+  linkType: hard
+
+"expo-sqlite@npm:~11.3.2":
+  version: 11.3.2
+  resolution: "expo-sqlite@npm:11.3.2"
+  dependencies:
+    "@expo/websql": ^1.0.1
+  peerDependencies:
+    expo: "*"
+  checksum: 2e1c76d08814c2d59d7074c3dc6300b79d4f3e47e689fefdb41328ccbd1776c940dc6078912a179de054fc04f2991d518d5aaed227fd76751f351ccd5cdea9b8
+  languageName: node
+  linkType: hard
+
 "expo-status-bar@npm:~1.6.0":
   version: 1.6.0
   resolution: "expo-status-bar@npm:1.6.0"
@@ -4607,6 +4649,8 @@ __metadata:
     expo: ~49.0.5
     expo-image-picker: ~14.3.2
     expo-location: ~16.1.0
+    expo-splash-screen: ~0.20.5
+    expo-sqlite: ~11.3.2
     expo-status-bar: ~1.6.0
     react: 18.2.0
     react-native: 0.72.3
@@ -5222,6 +5266,13 @@ __metadata:
   bin:
     image-size: bin/image-size.js
   checksum: 01745fdb47f87cecf538e69c63f9adc5bfab30a345345c2de91105f3afbd1bfcfba1256af02bf3323077b33b0004469a837e077bf0cbb9c907e9c1e9e7547585
+  languageName: node
+  linkType: hard
+
+"immediate@npm:^3.2.2":
+  version: 3.3.0
+  resolution: "immediate@npm:3.3.0"
+  checksum: 634b4305101e2452eba6c07d485bf3e415995e533c94b9c3ffbc37026fa1be34def6e4f2276b0dc2162a3f91628564a4bfb26280278b89d3ee54624e854d2f5f
   languageName: node
   linkType: hard
 
@@ -6882,6 +6933,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"noop-fn@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "noop-fn@npm:1.0.0"
+  checksum: e271f0590c06283d6216e268507fdab066d52164d7281cef1b99a2f40442c85297341c0e37a8fcbc9da95ea6cead7a87a69937c71a80fb3630b909d08b4e8c19
+  languageName: node
+  linkType: hard
+
 "nopt@npm:^6.0.0":
   version: 6.0.0
   resolution: "nopt@npm:6.0.0"
@@ -7339,6 +7397,13 @@ __metadata:
     picocolors: ^1.0.0
     source-map-js: ^1.0.2
   checksum: 1cdd0c298849df6cd65f7e646a3ba36870a37b65f55fd59d1a165539c263e9b4872a402bf4ed1ca1bc31f58b68b2835545e33ea1a23b161a1f8aa6d5ded81e78
+  languageName: node
+  linkType: hard
+
+"pouchdb-collections@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "pouchdb-collections@npm:1.0.1"
+  checksum: 5ac0c3f678406c143d99f5706123ab7d65bfd60a481a7eae2487ad355f5d3c926af0f0acfa9e47ff3e9d2aa0a782cca4431a37ba77d1a02cfd380c5cf5d6aef8
   languageName: node
   linkType: hard
 
@@ -8756,6 +8821,13 @@ __metadata:
   version: 2.3.8
   resolution: "through@npm:2.3.8"
   checksum: a38c3e059853c494af95d50c072b83f8b676a9ba2818dcc5b108ef252230735c54e0185437618596c790bbba8fcdaef5b290405981ffa09dce67b1f1bf190cbd
+  languageName: node
+  linkType: hard
+
+"tiny-queue@npm:^0.2.1":
+  version: 0.2.1
+  resolution: "tiny-queue@npm:0.2.1"
+  checksum: 9fb00beb47da966cc9296af5049077a656f6111ffb5a20b38a068659b30d8459f8f80b7bcf938e15547c321ecb7da8d001f38c2c847c0492633ae3b69550a4df
   languageName: node
   linkType: hard
 
