@@ -13,7 +13,6 @@ const AllPlaces = ({ route }) => {
 	useEffect(() => {
 		const fetcher = async () => {
 			const allPlaces: any = await fetchPlaces();
-			console.log('ALLPLACES: ', allPlaces);
 			setLoadedPlaces(allPlaces);
 		};
 		if (isFocused) {

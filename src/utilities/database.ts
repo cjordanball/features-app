@@ -29,7 +29,6 @@ export function init() {
 }
 
 export const insertPlace = (place: Place) => {
-	console.log('INSERT_PLACE');
 	const promise = new Promise((res, rej) => {
 		database.transaction((tx) => {
 			tx.executeSql(
@@ -42,12 +41,10 @@ export const insertPlace = (place: Place) => {
 					place.location.lng,
 				],
 				(_, result) => {
-					console.log(result);
 					res(result);
 				},
 
 				(_, err) => {
-					console.log('ERRY: ', err);
 					rej(err);
 				}
 			);
@@ -57,7 +54,6 @@ export const insertPlace = (place: Place) => {
 };
 
 export const fetchPlaces = () => {
-	console.log('FETCH_PLACES');
 	const promise = new Promise((res, rej) => {
 		database.transaction((tx) => {
 			tx.executeSql(
@@ -81,7 +77,6 @@ export const fetchPlaces = () => {
 				},
 
 				(_, err) => {
-					console.log('ERR_FETCH: ', err);
 					rej(err);
 				}
 			);
